@@ -24,7 +24,6 @@ const DynamicDataBaseTable = ({ table }) => {
             <tbody className="bg-white divide-y divide-gray-200 ">
               {table.map((rows, i) => (
                 <tr key={i}>
-                  {console.log(Object.values(rows))}
                   {Object.values(rows).map((value, i) => (
                     <td className="p-2" key={i}>{`${value}`}</td>
                   ))}

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // dispatch
 import { useHistory } from "react-router-dom";
-import { useUserDispatch, loginUser } from "../../context/UserContext";
-import Loader from "../Loader";
+import { useUserDispatch, loginUser } from "../../../context/UserContext";
+import Loader from "../../Loader";
 
 const login = (target, setIsLoading, setError, userDispatch, history) => {
   const username = target[0].value;

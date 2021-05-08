@@ -1,4 +1,5 @@
 import axios from "axios";
+import { toast } from "react-toastify";
 
 import { signOutWithoutDispatcher } from "./context/UserContext";
 
@@ -14,8 +15,9 @@ axios.interceptors.response.use(
     return response;
   },
   (error) => {
-    // Do something with response error
-    if (error.response.status === 401) {
+    if (error.message === "Network Error") {
+      console.log("There was a network error.");
+    } else if ( error.response.status === 401) {
       signOutWithoutDispatcher();
     }
 

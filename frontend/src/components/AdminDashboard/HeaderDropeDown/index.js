@@ -1,7 +1,7 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { LogoutIcon, UserIcon } from "@heroicons/react/solid";
-import {signOut} from "../../context/UserContext"
+import {signOut} from "../../../context/UserContext"
 
 export default function HeaderDropDown(props) {
   const {userDispatch , history} = props

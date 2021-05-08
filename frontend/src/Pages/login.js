@@ -1,8 +1,8 @@
-import LoginModal from "../components/LoginModal";
+import LoginModal from "../components/AdminDashboard/LoginModal";
 
 const LoginPage = () => {
   return (
-    <div className="flex  h-screen  justify-center items-center w-full border-rose-600 border border-4">
+    <div className="flex  h-screen  justify-center items-center w-full">
       <LoginModal />
     </div>
   );

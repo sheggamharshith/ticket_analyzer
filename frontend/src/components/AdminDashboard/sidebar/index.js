@@ -2,7 +2,7 @@ import {
   toggleSidebar,
   useLayoutDispatch,
   useLayoutState,
-} from "../../context/LayoutContext";
+} from "../../../context/LayoutContext";
 import { Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";

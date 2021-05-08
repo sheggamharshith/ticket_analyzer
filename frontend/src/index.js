@@ -13,14 +13,14 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <>
-    <React.StrictMode>
-      <LayoutProvider>
-        <UserProvider>
+    <LayoutProvider>
+      <UserProvider>
+        <React.Fragment>
           <App />
-        </UserProvider>
-      </LayoutProvider>
-    </React.StrictMode>
-    <ToastContainer />
+          <ToastContainer />
+        </React.Fragment>
+      </UserProvider>
+    </LayoutProvider>
   </>,
   document.getElementById("root")
 );

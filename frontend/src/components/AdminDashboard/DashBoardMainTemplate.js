@@ -1,8 +1,8 @@
 import React from "react";
 
 // components
-import Header from "../Header";
-import SideBar from "../sidebar";
+import Header from "./Header";
+import SideBar from "./sidebar";
 
 const DashBoardTemplate = ({ children }) => {
   return (

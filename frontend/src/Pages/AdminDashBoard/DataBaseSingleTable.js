@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import DynamicDataBaseTable from "../../components/DynamicDatabaseTable";
-import DashBoardMainTemplate from "../../components/Layout/DashBoardMainTemplate"
+import DynamicDataBaseTable from "../../components/AdminDashboard/DynamicDatabaseTable";
+import DashBoardMainTemplate from "../../components/AdminDashboard/DashBoardMainTemplate"
 import axios from "../../customAxios";
 
 

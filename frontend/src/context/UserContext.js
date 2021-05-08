@@ -76,13 +76,15 @@ function loginUser(dispatch, login, password, history, setIsLoading, setError) {
       })
       .then((response) => {
         localStorage.setItem("id_token", response.data.access_token);
-        localStorage.setItem("token_type", response.data.toke_type);
+        localStorage.setItem("token_type", response.data.token_type);
         setIsLoading(false);
+        axios.defaults.headers.common["Authorization"] = `Bearer ${response.data.access_token}`;
         dispatch({ type: "LOGIN_SUCCESS" });
       })
       .catch((error) => {
-        setError(`${error.response.data.detail}`);
-        toast.error(`${error.response.data.detail}`);
+        console.log(error.response)
+        setError(`${error}`);
+        toast.error(`${error}`);
         setIsLoading(false);
       });
   } else {

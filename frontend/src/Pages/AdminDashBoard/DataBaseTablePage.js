@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import DataBaseTable from "../../components/DataBaseTableDataType";
-import DashBoardTemplate from "../../components/Layout/DashBoardMainTemplate";
+import DataBaseTable from "../../components/AdminDashboard/DataBaseTableDataType";
+import DashBoardTemplate from "../../components/AdminDashboard/DashBoardMainTemplate";
 import Loader from "../../components/Loader";
 import axios from "../../customAxios";
 

@@ -1,8 +1,8 @@
 import React from "react";
 import DropDownHeader from "../HeaderDropeDown";
 import { useHistory } from "react-router-dom"
-import { useUserDispatch } from "../../context/UserContext";
-import {toggleSidebar , useLayoutDispatch } from "../../context/LayoutContext"
+import { useUserDispatch } from "../../../context/UserContext";
+import {toggleSidebar , useLayoutDispatch } from "../../../context/LayoutContext"
 
 
 export default function Header() {
@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <>
       <div className="w-full">
-        <nav className="relative flex flex-wrap items-center justify-center px-2 py-3 bg-pblue shadow">
+        <nav className="relative flex flex-wrap items-center justify-center px-2 py-3 bg-pmaterial shadow-lg border-b border-gray-400">
           <div className=" flex w-full font-bold text-white items-center justify-between">
             <div className="flex flex-row-reverse gap-4 ">
               <div>Full Stack Project Template</div>

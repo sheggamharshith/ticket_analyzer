@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import DashBoardTemplate from "../../components/Layout/DashBoardMainTemplate";
+import DashBoardTemplate from "../../components/AdminDashboard/DashBoardMainTemplate";
 import Loader from "../../components/Loader";
-import DataBaseTable from "../../components/DataBaseTable"
+import DataBaseTable from "../../components/AdminDashboard/DataBaseTable"
 
 import axios from "../../customAxios";
 
@@ -12,12 +12,11 @@ const getTableNames = (setTableNames, setIsLoading, setError) => {
   axios
     .get("v1/database/table")
     .then((res) => {
-      console.log(res);
       setTableNames(res.data.names);
       setIsLoading(false);
     })
     .catch((err) => {
-      console.log(err);
+
       toast.error(err.response.detail);
       setError(err.response.detail);
       setIsLoading(false);
@@ -32,7 +31,6 @@ const AdminMainPage = () => {
   useEffect(() => {
     getTableNames(setTableNames, setIsLoading, setError);
   }, []);
-  console.log(error)
   return (
     <DashBoardTemplate>
       <div className="w-full h-full">
