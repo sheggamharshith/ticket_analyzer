@@ -8,8 +8,18 @@ google-api-python-client = "*"
 google-auth-httplib2 = "*"
 google-auth-oauthlib = "*"
 ujson = "*"
+SQLAlchemy = "*"
+python-jose = "*"
+passlib = "*"
+psycopg2-binary = "*"
+psycopg2 = "*"
+emails = "*"
+celery = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.9"
+
+[packages.fastapi]
+extras = [ "all",]
