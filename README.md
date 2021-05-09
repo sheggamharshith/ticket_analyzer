@@ -1,6 +1,6 @@
 # Ticket Analyzier
 
-This preoject will be helpfull to catgorize the ticket generated from the user
+This project will be helpfull to catgorize the ticket generated from the user
 
 # Admin template
 
